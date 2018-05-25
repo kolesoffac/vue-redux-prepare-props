@@ -7,7 +7,7 @@
   "unpkg": "dist/vue-redux-prepare-props.js",
   "repository": "https://github.com/kolesoffac/vue-redux-prepare-props.git",
   "author": "Anatoly Kolesov <kolesoffac@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "newpatch": "npm version patch -m 'Build %s'",
     "newminor": "npm version minor -m 'Build %s'",
