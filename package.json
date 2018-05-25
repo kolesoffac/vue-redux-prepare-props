@@ -1,6 +1,6 @@
 {
   "name": "vue-redux-prepare-props",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper for use redux with Vue.js using Vuex",
   "main": "dist/vue-redux-prepare-props.common.js",
   "module": "dist/vue-redux-prepare-props.es.js",
