@@ -12,7 +12,7 @@
     "newpatch": "npm version patch -m 'Build %s'",
     "newminor": "npm version minor -m 'Build %s'",
     "newmajor": "npm version major -m 'Build %s'",
-    "version": "npm run build-all && git add -A build",
+    "version": "npm run build-all && git add -A dist",
     "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
     "build-prod": "echo \"Run build prod...\" && NODE_ENV='production' rollup -c && echo \"Finish build...\"",
     "build-all": "npm run build && npm run build-prod"
