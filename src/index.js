@@ -1,4 +1,4 @@
-const preparePropsFromRedux = function(map, subConditions={}, prefix="inner_") {
+const prepareProps = function(map, subConditions={}, prefix="inner_") {
 	let calcs = {};
 	let watchers = {};
 
@@ -29,4 +29,4 @@ const preparePropsFromRedux = function(map, subConditions={}, prefix="inner_") {
 	return {calcs, datas, watchers};
 };
 
-export default preparePropsFromRedux;
+export default prepareProps;
