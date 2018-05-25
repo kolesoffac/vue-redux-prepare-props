@@ -1,6 +1,6 @@
 # Vue-redux-prepare-props
 
-> Helper for use *Redux* props with *Vue.js* using *Vuex* and *Vuedeux*
+> Helper for use props of *Redux* with *Vue.js* using *Vuex* and *Vuedeux*
 
 ## Resolved problem
 When change only one prop from redux state then triggering all computed and wathers where using props of redux state, which did not change, because always change root object. It's sensitive when prop is object or array.
