@@ -1,4 +1,4 @@
-var preparePropsFromRedux = function preparePropsFromRedux(map) {
+var prepareProps = function prepareProps(map) {
 	var subConditions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 	var prefix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "inner_";
 
@@ -33,4 +33,4 @@ var preparePropsFromRedux = function preparePropsFromRedux(map) {
 	return { calcs: calcs, datas: datas, watchers: watchers };
 };
 
-export default preparePropsFromRedux;
+export default prepareProps;

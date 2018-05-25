@@ -4,7 +4,7 @@
 	(global.VueReduxPrepareProps = factory());
 }(this, (function () { 'use strict';
 
-	var preparePropsFromRedux = function preparePropsFromRedux(map) {
+	var prepareProps = function prepareProps(map) {
 		var subConditions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 		var prefix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "inner_";
 
@@ -39,6 +39,6 @@
 		return { calcs: calcs, datas: datas, watchers: watchers };
 	};
 
-	return preparePropsFromRedux;
+	return prepareProps;
 
 })));
