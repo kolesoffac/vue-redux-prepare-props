@@ -9,9 +9,9 @@
   "author": "Anatoly Kolesov <kolesoffac@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "newpatch": "npm run reset-dist && npm version patch -m 'Build %s'",
-    "newminor": "npm run reset-dist && npm version minor -m 'Build %s'",
-    "newmajor": "npm run reset-dist && npm version major -m 'Build %s'",
+    "newpatch": "npm version patch -m 'Build %s'",
+    "newminor": "npm version minor -m 'Build %s'",
+    "newmajor": "npm version major -m 'Build %s'",
     "version": "npm run build-all && git add -A build",
     "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
     "build-prod": "echo \"Run build prod...\" && NODE_ENV='production' rollup -c && echo \"Finish build...\"",
