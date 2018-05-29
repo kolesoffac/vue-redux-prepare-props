@@ -1,3 +1,13 @@
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/kolesoffac/vue-redux-prepare-props/compare/v0.0.6...v0.0.7) (2018-05-29)
+
+
+### Performance Improvements
+
+* use sync=true in watchers ([3eed2d0](https://github.com/kolesoffac/vue-redux-prepare-props/commit/3eed2d0))
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/kolesoffac/vue-redux-prepare-props/compare/v0.0.5...v0.0.6) (2018-05-28)
 
