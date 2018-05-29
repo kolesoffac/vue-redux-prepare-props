@@ -15,11 +15,14 @@
 			var innerProp = prefix + prop;
 
 			calcs[innerProp] = map[prop];
-			watchers[innerProp] = function (newVal, oldVal) {
-				if (newVal !== undefined && oldVal !== undefined && newVal != oldVal) {
-					if (!subConditions[prop] || subConditions[prop] && typeof subConditions[prop] === "function" && subConditions[prop](newVal, oldVal)) {
-						this[prop] = newVal;
-					}			}		};
+			watchers[innerProp] = {
+				sync: true,
+				handler: function handler(newVal, oldVal) {
+					if (newVal !== undefined && oldVal !== undefined && newVal != oldVal) {
+						if (!subConditions[prop] || subConditions[prop] && typeof subConditions[prop] === "function" && subConditions[prop](newVal, oldVal)) {
+							this[prop] = newVal;
+						}				}			}
+			};
 		};
 
 		for (var prop in map) {
